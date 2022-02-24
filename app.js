@@ -151,6 +151,8 @@ function weekSavings(save, spend) {
 
 function reset(){
     currentWeek = 1;
+    totalSavings = 0;
+    savingSpan.innerText = totalSavings;
     displayWeek.innerText = `WEEK : ${currentWeek}`;
     displayWeekRes.innerText = `WEEK : ${currentWeek}`;
     workButton.innerText = 'Add';
