@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background-color: #1f1b29;
+}
+
+#begin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#begin h2{
+    margin: 50px;
+}
+
+#begin input{
+    /* d */
+    /* color: wheat; */
+    margin: 30px;
+    padding: 15px;
+}
+
+/* Work */
+#work{
+    display: flex;
+    flex-direction: column;
+}
+
+#work input{
+    margin: 30px;
+    padding: 15px;
+    width: 30%;
+    opacity: 0.8;
+}
+
+#work-form button{
+    width: 30%;
+    margin: 30px;
+}
+
+#work-form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Goal  */
+#goal{
+    margin: 30px;
+    padding: 5px;
+}
+
+/* Display */
+#display{
+    display: block;
+    right: 30%;
+    top: 30%;
+    position: absolute;
+}
+
+#display-div{
+    font-size: 3rem;
+    margin: 10px 0;
+    font-weight: bolder;
+    color: #ffa260;
+}
+
+/* Utility Classes */
+.h-primary{
+    text-align: center;
+    margin: 10px;
+    font-weight: lighter;
+    color: white;
+}
+
+.h-primary-1{
+    /* text-align: center; */
+    margin: 10px;
+    font-weight: lighter;
+    color: white;
+}
+
+.h-secondary{
+    color: white;
+    margin: 10px;
+}
+
+.h-secondary-1{
+    text-align: center;
+    animation-name: congratulations;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes congratulations {
+    from{color: #ffa260;}
+    to{color: white;}
+}
+
+.btn{
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.btn{
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.btn:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.btn-no-hover{
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+
+.v-class{
+    display: none;
+}
+
+.labels{
+    font-weight: lighter;
+    font-size: 2rem;
+    color: beige;
+    margin: 20px;
+}
+
+.display-div-hidden{
+    display: none;
+}
+
+@media screen and (max-width:1000px){
+    .week-btn{
+        display: none;
+    }
+
+    #display-div{
+        display: none;
+    }
+
+    .display-div-hidden{
+        display: inline;
+        font-size: 2rem;
+        margin: 10px 0;
+        font-weight: bolder;
+        color: #ffa260;
+    }
+
+    #work input{
+        width: 70%;
+    }
+}
